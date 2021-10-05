@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoWash</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Lato", sans-serif;
+      }
+      .parent {
+        margin: 0;
+        width: 100%;
+      }
+      .nav-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        margin: 0;
+        height: 80px;
+        width: 100%;
+        border: 1px solid gray;
+        font-size: 12px;
+      }
+      .nav-h1 {
+        font-size: 40px;
+        margin: auto 5px;
+      }
+      .nav-img {
+        height: 30px;
+        width: 30px;
+        margin: 10px;
+        padding: 10px;
+        background-color: #202c45;
+        border-radius: 30px;
+      }
+      .nav-a {
+        text-decoration: none;
+        color: white;
+        padding: 0 20px;
+      }
+      a:hover {
+        color: red;
+      }
+      .body-content1 {
+        height: 500px;
+        width: 100%;
+        background-image: url("picture/carwash1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .main-frame {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 100px;
+      }
+
+      .nav-left {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 400px;
+        margin-right: 100px;
+        /* background-color: violet; */
+      }
+      .nav-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto 30px;
+      }
+      .nav-bottom {
+        display: fixed;
+        /* flex-direction: row; */
+        /* justify-content: left; */
+        height: 100px;
+        width: 100%;
+        background-color: #202c45;
+      }
+      .nav-btm-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100px;
+        font-size: 14px;
+      }
+      .nav-btm-left {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: 100px;
+      }
+      .nav-btm-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: auto 150px;
+      }
+      .nav-btn {
+        border: 0;
+        height: 50px;
+        width: 200px;
+        background-color: white;
+        color: #202c45;
+        border-radius: 30px;
+        /* margin: auto; */
+      }
+    </style>
+  </head>
+  <body>
+    <section class="parent">
+      <section class="nav-top">
+        <div class="nav-left">
+          <h1 style="color: red" class="nav-h1"><i> Auto</i></h1>
+          <h1 style="color: #202c45" class="nav-h1"><i>Wash</i></h1>
+        </div>
+        <div class="nav-right">
+          <div>
+            <img class="nav-img" src="picture/clock.png" alt="clock" />
+          </div>
+          <div>
+            <h3>Opening Hours</h3>
+            <p>Mon-Fri, 8.00-9.00</p>
+          </div>
+        </div>
+        <div class="nav-right">
+          <div>
+            <img class="nav-img" src="picture/call.png" alt="call" />
+          </div>
+          <div>
+            <h3>Call Us</h3>
+            <p>+012 345 6789</p>
+          </div>
+        </div>
+        <div class="nav-right">
+          <div>
+            <img class="nav-img" src="picture/mail.png" alt="Email" />
+          </div>
+          <div>
+            <h3>Email Us</h3>
+            <p>info@domain.com</p>
+          </div>
+        </div>
+      </section>
+      <section class="nav-bottom">
+        <div class="nav-btm-content">
+          <div class="nav-btm-left">
+            <a class="nav-a" href="">Home</a>
+            <a class="nav-a" href="">About</a>
+            <a class="nav-a" href="">Services</a>
+            <a class="nav-a" href="">Price</a>
+            <a class="nav-a" href="">Washing Points</a>
+            <a class="nav-a" href="">Pages</a>
+            <a class="nav-a" href="">Contact</a>
+          </div>
+          <div class="nav-btm-right">
+            <button class="nav-btn">Get Appointment</button>
+          </div>
+        </div>
+      </section>
+      <section class="body-content1">
+        <div class="main-frame">
+          <p style="font-size: 20px; color: red">WASHING & DETAILING</p>
+          <p style="font-size: 50px; color: white">Quality Service for You</p>
+          <p style="font-size: 20px; color: red">
+            Provide Best Servies and feel good experience, comfort and lot more
+            for you
+          </p>
+          <button>Exlpore More</button>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
