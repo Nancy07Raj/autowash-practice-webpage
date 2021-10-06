@@ -49,18 +49,103 @@
         color: red;
       }
       .body-content1 {
-        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 700px;
         width: 100%;
-        background-image: url("picture/carwash1.jpg");
+        background-image: url("picture/carwash5.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+      }
+      .body-content2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        height: 700px;
+        width: 100%;
+        margin: 10px auto;
+      }
+      .content2-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        width: 500px;
+        margin-left: 100px;
+      }
+      .content2-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+        margin-left: 30px;
+        width: 500px;
+      }
+      .content2-h1 {
+        font-size: 30px;
+        color: #202c45;
+        margin: 10px 0;
+      }
+      .content2-btn {
+        background-color: red;
+        border: 0;
+        color: white;
+        height: 50px;
+        width: 120px;
+        border-radius: 30px;
+        margin-top: 10px;
+      }
+      .content3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 20px auto;
+        height: 800px;
+        width: 100%;
+      }
+      .content3-services {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        /* background-color: greenyellow; */
+        margin: 50px;
+        margin-left: 70px;
+      }
+      .content3-row {
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+        width: 250px;
+        justify-content: left;
+        align-items: flex-start;
+        margin: 10px;
+        /* background-color: green; */
+      }
+      .content3-hr {
+        border: 1px solid red;
+        width: 50px;
+        margin-bottom: 0;
+      }
+      .content3-h1 {
+        font-size: 40px;
+        color: #202c45;
+        margin: 10px auto;
+      }
+      .content3-img {
+        height: 40px;
+        width: 40px;
       }
       .main-frame {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 0 100px;
+        margin: auto;
       }
 
       .nav-left {
@@ -78,19 +163,18 @@
         margin: auto 30px;
       }
       .nav-bottom {
-        display: fixed;
-        /* flex-direction: row; */
-        /* justify-content: left; */
-        height: 100px;
+        position: fixed;
+        height: 70px;
         width: 100%;
         background-color: #202c45;
       }
       .nav-btm-content {
+        position: absolute;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        height: 100px;
+        height: 70px;
         font-size: 14px;
       }
       .nav-btm-left {
@@ -107,12 +191,24 @@
       }
       .nav-btn {
         border: 0;
-        height: 50px;
-        width: 200px;
+        height: 40px;
+        width: 160px;
         background-color: white;
         color: #202c45;
         border-radius: 30px;
         /* margin: auto; */
+      }
+      .main-frame-para {
+        line-height: 20px;
+        margin: 30px auto;
+      }
+      .main-frame-btn {
+        border: 0;
+        border-radius: 30px;
+        background-color: red;
+        height: 50px;
+        width: 150px;
+        color: white;
       }
     </style>
   </head>
@@ -151,7 +247,8 @@
           </div>
         </div>
       </section>
-      <section class="nav-bottom">
+      <!-- <div class="nav-bottom-container"> -->
+      <div class="nav-bottom">
         <div class="nav-btm-content">
           <div class="nav-btm-left">
             <a class="nav-a" href="">Home</a>
@@ -166,16 +263,122 @@
             <button class="nav-btn">Get Appointment</button>
           </div>
         </div>
-      </section>
+      </div>
+      <!-- </div> -->
       <section class="body-content1">
         <div class="main-frame">
-          <p style="font-size: 20px; color: red">WASHING & DETAILING</p>
-          <p style="font-size: 50px; color: white">Quality Service for You</p>
-          <p style="font-size: 20px; color: red">
+          <p class="main-frame-para" style="font-size: 20px; color: red">
+            WASHING & DETAILING
+          </p>
+          <p class="main-frame-para" style="font-size: 70px; color: whitesmoke">
+            Quality Service for You
+          </p>
+          <p class="main-frame-para" style="font-size: 20px; color: red">
             Provide Best Servies and feel good experience, comfort and lot more
             for you
           </p>
-          <button>Exlpore More</button>
+          <button class="main-frame-btn">Explore More</button>
+        </div>
+      </section>
+      <section class="body-content2">
+        <div class="content2-left">
+          <img src="picture/body-content2-img.jpg" alt="" />
+        </div>
+        <div class="content2-right">
+          <h3
+            style="
+              color: red;
+              border-bottom: 1px solid red;
+              padding-bottom: 5px;
+            "
+          >
+            About Us
+          </h3>
+          <h1 class="content2-h1">Car Washing and Detailing</h1>
+          <p style="color: gray">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. A
+            doloribus perferendis et blanditiis qui voluptatem iusto officia
+            asperiores tempore. Dicta adipisci eius optio iure error aut quis
+            quas consectetur doloribus.
+          </p>
+          <ul style="color: gray">
+            <li style="padding-bottom: 5px">Seat washing</li>
+            <li style="padding-bottom: 5px">Vacuum washing</li>
+            <li style="padding-bottom: 5px">Interior wet cleaning</li>
+            <li style="padding-bottom: 5px">window wiping</li>
+          </ul>
+          <button class="content2-btn">Learn More</button>
+        </div>
+      </section>
+      <section class="content3">
+        <p style="margin-bottom: 3px; color: red">WHAT WE DO ?</p>
+        <hr class="content3-hr" />
+        <h1 class="content3-h1">Premium Washing Services</h1>
+        <div class="content3-services">
+          <div class="content3-row">
+            <img class="content3-img" src="picture/car-service1.png" alt="" />
+            <h3 style="color: #202c45">Exterior Washing</h3>
+            <p style="color: gray">
+              Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare
+              velit non metus tortor
+            </p>
+          </div>
+          <div class="content3-row">
+            <img class="content3-img" src="picture/car-service2.png" alt="" />
+            <h3 style="color: #202c45">Exterior Washing</h3>
+            <p style="color: gray">
+              Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare
+              velit non metus tortor
+            </p>
+          </div>
+          <div class="content3-row">
+            <img class="content3-img" src="picture/car-service3.png" alt="" />
+            <h3 style="color: #202c45">Exterior Washing</h3>
+            <p style="color: gray">
+              Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare
+              velit non metus tortor
+            </p>
+          </div>
+          <div class="content3-row">
+            <img class="content3-img" src="picture/car-service4.png" alt="" />
+            <h3 style="color: #202c45">Exterior Washing</h3>
+            <p style="color: gray">
+              Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare
+              velit non metus tortor
+            </p>
+          </div>
+          <div class="content3-row">
+            <img class="content3-img" src="picture/car-service5.png" alt="" />
+            <h3 style="color: #202c45">Exterior Washing</h3>
+            <p style="color: gray">
+              Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare
+              velit non metus tortor
+            </p>
+          </div>
+          <div class="content3-row">
+            <img class="content3-img" src="picture/car-service6.png" alt="" />
+            <h3 style="color: #202c45">Exterior Washing</h3>
+            <p style="color: gray">
+              Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare
+              velit non metus tortor
+            </p>
+          </div>
+          <div class="content3-row">
+            <img class="content3-img" src="picture/car-service7.png" alt="" />
+            <h3 style="color: #202c45">Exterior Washing</h3>
+            <p style="color: gray">
+              Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare
+              velit non metus tortor
+            </p>
+          </div>
+          <div class="content3-row">
+            <img class="content3-img" src="picture/car-service8.png" alt="" />
+            <h3 style="color: #202c45">Exterior Washing</h3>
+            <p style="color: gray">
+              Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare
+              velit non metus tortor
+            </p>
+          </div>
         </div>
       </section>
     </section>
