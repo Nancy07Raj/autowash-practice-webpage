@@ -9,208 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
       rel="stylesheet"
     />
-    <style>
-      body {
-        margin: 0;
-        font-family: "Lato", sans-serif;
-      }
-      .parent {
-        margin: 0;
-        width: 100%;
-      }
-      .nav-top {
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        margin: 0;
-        height: 80px;
-        width: 100%;
-        border: 1px solid gray;
-        font-size: 12px;
-      }
-      .nav-h1 {
-        font-size: 40px;
-        margin: auto 5px;
-      }
-      .nav-img {
-        height: 30px;
-        width: 30px;
-        margin: 10px;
-        padding: 10px;
-        background-color: #202c45;
-        border-radius: 30px;
-      }
-      .nav-a {
-        text-decoration: none;
-        color: white;
-        padding: 0 20px;
-      }
-      a:hover {
-        color: red;
-      }
-      .body-content1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 700px;
-        width: 100%;
-        background-image: url("picture/carwash5.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      .body-content2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        height: 700px;
-        width: 100%;
-        margin: 10px auto;
-      }
-      .content2-left {
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        align-items: left;
-        width: 500px;
-        margin-left: 100px;
-      }
-      .content2-right {
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        align-items: flex-start;
-        margin-left: 30px;
-        width: 500px;
-      }
-      .content2-h1 {
-        font-size: 30px;
-        color: #202c45;
-        margin: 10px 0;
-      }
-      .content2-btn {
-        background-color: red;
-        border: 0;
-        color: white;
-        height: 50px;
-        width: 120px;
-        border-radius: 30px;
-        margin-top: 10px;
-      }
-      .content3 {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        margin: 20px auto;
-        height: 800px;
-        width: 100%;
-      }
-      .content3-services {
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        /* background-color: greenyellow; */
-        margin: 50px;
-        margin-left: 70px;
-      }
-      .content3-row {
-        display: flex;
-        flex-direction: column;
-        height: 250px;
-        width: 250px;
-        justify-content: left;
-        align-items: flex-start;
-        margin: 10px;
-        /* background-color: green; */
-      }
-      .content3-hr {
-        border: 1px solid red;
-        width: 50px;
-        margin-bottom: 0;
-      }
-      .content3-h1 {
-        font-size: 40px;
-        color: #202c45;
-        margin: 10px auto;
-      }
-      .content3-img {
-        height: 40px;
-        width: 40px;
-      }
-      .main-frame {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-      }
-
-      .nav-left {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 400px;
-        margin-right: 100px;
-        /* background-color: violet; */
-      }
-      .nav-right {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: auto 30px;
-      }
-      .nav-bottom {
-        position: fixed;
-        height: 70px;
-        width: 100%;
-        background-color: #202c45;
-      }
-      .nav-btm-content {
-        position: absolute;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        height: 70px;
-        font-size: 14px;
-      }
-      .nav-btm-left {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        margin-left: 100px;
-      }
-      .nav-btm-right {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        margin: auto 150px;
-      }
-      .nav-btn {
-        border: 0;
-        height: 40px;
-        width: 160px;
-        background-color: white;
-        color: #202c45;
-        border-radius: 30px;
-        /* margin: auto; */
-      }
-      .main-frame-para {
-        line-height: 20px;
-        margin: 30px auto;
-      }
-      .main-frame-btn {
-        border: 0;
-        border-radius: 30px;
-        background-color: red;
-        height: 50px;
-        width: 150px;
-        color: white;
-      }
-    </style>
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <section class="parent">
@@ -230,7 +29,7 @@
         </div>
         <div class="nav-right">
           <div>
-            <img class="nav-img" src="picture/call.png" alt="call" />
+            <i class="fas fa-phone-alt white nav-img"></i>
           </div>
           <div>
             <h3>Call Us</h3>
@@ -247,7 +46,7 @@
           </div>
         </div>
       </section>
-      <!-- <div class="nav-bottom-container"> -->
+
       <div class="nav-bottom">
         <div class="nav-btm-content">
           <div class="nav-btm-left">
@@ -264,23 +63,22 @@
           </div>
         </div>
       </div>
-      <!-- </div> -->
-      <section class="body-content1">
+
+      <section class="content1">
+        <div class="content1-img">
+          <img src="picture/carwash1.jpg" alt="" />
+        </div>
         <div class="main-frame">
-          <p class="main-frame-para" style="font-size: 20px; color: red">
-            WASHING & DETAILING
-          </p>
-          <p class="main-frame-para" style="font-size: 70px; color: whitesmoke">
-            Quality Service for You
-          </p>
-          <p class="main-frame-para" style="font-size: 20px; color: red">
+          <p class="main-frame-para">WASHING & DETAILING</p>
+          <h1 class="main-frame-h1">Quality Service for You</h1>
+          <p class="main-frame-para">
             Provide Best Servies and feel good experience, comfort and lot more
             for you
           </p>
           <button class="main-frame-btn">Explore More</button>
         </div>
       </section>
-      <section class="body-content2">
+      <section class="content2">
         <div class="content2-left">
           <img src="picture/body-content2-img.jpg" alt="" />
         </div>
@@ -301,84 +99,303 @@
             asperiores tempore. Dicta adipisci eius optio iure error aut quis
             quas consectetur doloribus.
           </p>
-          <ul style="color: gray">
-            <li style="padding-bottom: 5px">Seat washing</li>
-            <li style="padding-bottom: 5px">Vacuum washing</li>
-            <li style="padding-bottom: 5px">Interior wet cleaning</li>
-            <li style="padding-bottom: 5px">window wiping</li>
+          <ul class="content2-ul">
+            <li class="content2-li">Seat washing</li>
+            <li class="content2-li">Vacuum washing</li>
+            <li class="content2-li">Interior wet cleaning</li>
+            <li class="content2-li">window wiping</li>
           </ul>
           <button class="content2-btn">Learn More</button>
         </div>
       </section>
       <section class="content3">
-        <p style="margin-bottom: 3px; color: red">WHAT WE DO ?</p>
+        <p class="content3-para">WHAT WE DO ?</p>
         <hr class="content3-hr" />
         <h1 class="content3-h1">Premium Washing Services</h1>
         <div class="content3-services">
           <div class="content3-row">
             <img class="content3-img" src="picture/car-service1.png" alt="" />
-            <h3 style="color: #202c45">Exterior Washing</h3>
-            <p style="color: gray">
+            <h3 class="content3-h3">Exterior Washing</h3>
+            <p class="content3-subpara">
               Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare
               velit non metus tortor
             </p>
           </div>
           <div class="content3-row">
             <img class="content3-img" src="picture/car-service2.png" alt="" />
-            <h3 style="color: #202c45">Exterior Washing</h3>
-            <p style="color: gray">
+            <h3 class="content3-h3">Exterior Washing</h3>
+            <p class="content3-subpara">
               Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare
               velit non metus tortor
             </p>
           </div>
           <div class="content3-row">
             <img class="content3-img" src="picture/car-service3.png" alt="" />
-            <h3 style="color: #202c45">Exterior Washing</h3>
-            <p style="color: gray">
+            <h3 class="content3-h3">Exterior Washing</h3>
+            <p class="content3-subpara">
               Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare
               velit non metus tortor
             </p>
           </div>
           <div class="content3-row">
             <img class="content3-img" src="picture/car-service4.png" alt="" />
-            <h3 style="color: #202c45">Exterior Washing</h3>
-            <p style="color: gray">
+            <h3 class="content3-h3">Exterior Washing</h3>
+            <p class="content3-subpara">
               Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare
               velit non metus tortor
             </p>
           </div>
           <div class="content3-row">
             <img class="content3-img" src="picture/car-service5.png" alt="" />
-            <h3 style="color: #202c45">Exterior Washing</h3>
-            <p style="color: gray">
+            <h3 class="content3-h3">Exterior Washing</h3>
+            <p class="content3-subpara">
               Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare
               velit non metus tortor
             </p>
           </div>
           <div class="content3-row">
             <img class="content3-img" src="picture/car-service6.png" alt="" />
-            <h3 style="color: #202c45">Exterior Washing</h3>
-            <p style="color: gray">
+            <h3 class="content3-h3">Exterior Washing</h3>
+            <p class="content3-subpara">
               Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare
               velit non metus tortor
             </p>
           </div>
           <div class="content3-row">
             <img class="content3-img" src="picture/car-service7.png" alt="" />
-            <h3 style="color: #202c45">Exterior Washing</h3>
-            <p style="color: gray">
+            <h3 class="content3-h3">Exterior Washing</h3>
+            <p class="content3-subpara">
               Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare
               velit non metus tortor
             </p>
           </div>
           <div class="content3-row">
             <img class="content3-img" src="picture/car-service8.png" alt="" />
-            <h3 style="color: #202c45">Exterior Washing</h3>
-            <p style="color: gray">
+            <h3 class="content3-h3">Exterior Washing</h3>
+            <p class="content3-subpara">
               Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare
               velit non metus tortor
             </p>
           </div>
+        </div>
+      </section>
+      <section class="content4">
+        <!-- <div class="container4"> -->
+        <div class="content4-col">
+          <div class="content4-sub2">
+            <i class="fa fa-map-marker-alt content4-img"></i>
+          </div>
+          <div class="content4-sub2">
+            <h2 class="content4-h2">25</h2>
+            <p class="content4-para">Service Points</p>
+          </div>
+        </div>
+        <div class="content4-col">
+          <div class="content4-sub2">
+            <i class="fa fa-user content4-img"></i>
+          </div>
+          <div class="content4-sub2">
+            <h2 class="content4-h2">350</h2>
+            <p class="content4-para">Engineers and Worker</p>
+          </div>
+        </div>
+        <div class="content4-col">
+          <div class="content4-sub2">
+            <i class="fa fa-users content4-img"></i>
+          </div>
+          <div class="content4-sub2">
+            <h2 class="content4-h2">1500</h2>
+            <p class="content4-para">Happy Clients</p>
+          </div>
+        </div>
+        <div class="content4-col">
+          <div class="content4-sub2">
+            <i class="fa fa-check content4-img"></i>
+          </div>
+          <div class="content4-sub2">
+            <h2 class="content4-h2">5000</h2>
+            <p class="content4-para">Project Completed</p>
+          </div>
+        </div>
+        <!-- </div> -->
+      </section>
+      <section class="content3">
+        <p class="content3-para">WASHING PLAN</p>
+        <hr class="content3-hr" />
+        <h1 class="content3-h1">Choose Your Plan</h1>
+        <div class="content5-row">
+          <div class="price-item">
+            <div class="price-heading">
+              <h3>BASIC CLEANING</h3>
+              <h2 style="margin: 0">
+                <span>$</span><strong>49</strong><span>.99</span>
+              </h2>
+            </div>
+            <div class="price-body">
+              <ul style="list-style-type: none">
+                <li>
+                  <span style="margin: 0 5px"
+                    ><i class="far fa-check-circle"></i> </span
+                  >Seats Washing
+                </li>
+                <li>
+                  <span style="margin: 0 5px"
+                    ><i class="far fa-check-circle"></i></span
+                  >Vacuum Cleaning
+                </li>
+                <li>
+                  <span style="margin: 0 5px"
+                    ><i class="far fa-check-circle"></i></span
+                  >Exterior Cleaning
+                </li>
+                <li>
+                  <span style="margin: 0 5px">
+                    <i class="far fa-check-circle"></i> </span
+                  >Interior Wet Cleaning
+                </li>
+                <li>
+                  <span style="margin: 0 5px"
+                    ><i class="far fa-check-circle"></i> </span
+                  >Window Wiping
+                </li>
+              </ul>
+            </div>
+            <button class="price-btn">Book Now</button>
+          </div>
+          <div class="price-item price-item-middle">
+            <div class="price-heading-red">
+              <h3>BASIC CLEANING</h3>
+              <h2 style="margin: 0">
+                <span>$</span><strong>49</strong><span>.99</span>
+              </h2>
+            </div>
+            <div class="price-body">
+              <ul style="list-style-type: none">
+                <li>
+                  <span style="margin: 0 5px"
+                    ><i class="far fa-check-circle"></i> </span
+                  >Seats Washing
+                </li>
+                <li>
+                  <span style="margin: 0 5px"
+                    ><i class="far fa-check-circle"></i></span
+                  >Vacuum Cleaning
+                </li>
+                <li>
+                  <span style="margin: 0 5px"
+                    ><i class="far fa-check-circle"></i></span
+                  >Exterior Cleaning
+                </li>
+                <li>
+                  <span style="margin: 0 5px">
+                    <i class="far fa-check-circle"></i> </span
+                  >Interior Wet Cleaning
+                </li>
+                <li>
+                  <span style="margin: 0 5px"
+                    ><i class="far fa-check-circle"></i> </span
+                  >Window Wiping
+                </li>
+              </ul>
+            </div>
+            <button class="main-frame-btn">Book Now</button>
+          </div>
+          <div class="price-item">
+            <div class="price-heading">
+              <h3>BASIC CLEANING</h3>
+              <h2 style="margin: 0">
+                <span>$</span><strong>49</strong><span>.99</span>
+              </h2>
+            </div>
+            <div class="price-body">
+              <ul style="list-style-type: none">
+                <li>
+                  <span style="margin: 0 5px"
+                    ><i class="far fa-check-circle"></i> </span
+                  >Seats Washing
+                </li>
+                <li>
+                  <span style="margin: 0 5px"
+                    ><i class="far fa-check-circle"></i></span
+                  >Vacuum Cleaning
+                </li>
+                <li>
+                  <span style="margin: 0 5px"
+                    ><i class="far fa-check-circle"></i></span
+                  >Exterior Cleaning
+                </li>
+                <li>
+                  <span style="margin: 0 5px">
+                    <i class="far fa-check-circle"></i> </span
+                  >Interior Wet Cleaning
+                </li>
+                <li>
+                  <span style="margin: 0 5px"
+                    ><i class="far fa-check-circle"></i> </span
+                  >Window Wiping
+                </li>
+              </ul>
+            </div>
+            <button class="price-btn">Book Now</button>
+          </div>
+        </div>
+      </section>
+      <section class="content6">
+        <div class="ws-point-left">
+          <p class="content3-para">WASHING POINTS</p>
+          <hr class="content3-hr" />
+          <h1 class="ws-h1 ws-para">Car Washing & Care Points</h1>
+          <div class="ws-left-row">
+            <div class="ws-left-row-sub">
+              <div class="left-img">
+                <i class="fa fa-map-marker-alt ws-left-img"></i>
+              </div>
+              <div class="ws-left-col">
+                <p class="ws-para">Car Washing Point</p>
+                <p class="ws-para">123 Street, New York, USA</p>
+                <p class="ws-para">Call:+012 345 6789</p>
+              </div>
+            </div>
+
+            <div class="ws-left-row-sub">
+              <div class="left-img">
+                <i class="fa fa-map-marker-alt ws-left-img"></i>
+              </div>
+              <div class="ws-left-col">
+                <p class="ws-para">Car Washing Point</p>
+                <p class="ws-para">123 Street, New York, USA</p>
+                <p class="ws-para">Call:+012 345 6789</p>
+              </div>
+            </div>
+            <div class="ws-left-row-sub">
+              <div class="left-img">
+                <i class="fa fa-map-marker-alt ws-left-img"></i>
+              </div>
+              <div class="ws-left-col">
+                <p class="ws-para">Car Washing Point</p>
+                <p class="ws-para">123 Street, New York, USA</p>
+                <p class="ws-para">Call:+012 345 6789</p>
+              </div>
+            </div>
+            <div class="ws-left-row-sub">
+              <div class="left-img">
+                <i class="fa fa-map-marker-alt ws-left-img"></i>
+              </div>
+              <div class="ws-left-col">
+                <p class="ws-para">Car Washing Point</p>
+                <p class="ws-para">123 Street, New York, USA</p>
+                <p class="ws-para">Call:+012 345 6789</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ws-right">
+          <p class="">Request for a Car Wash</p>
+          <input type="text" value="Name" width="150" height="100" />
+          <input type="email" value="E-mail" width="150" height="100" />
+          <input type="textarea" value="Description" width="150" height="400" />
+          <button>Send Request</button>
         </div>
       </section>
     </section>
