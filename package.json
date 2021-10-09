@@ -1,0 +1,23 @@
+{
+  "name": "autowash-practice-webpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage":"https://nancy07raj.github.io/autowash-practice-webpage/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nancy07Raj/autowash-practice-webpage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nancy07Raj/autowash-practice-webpage/issues"
+  },
+    "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
