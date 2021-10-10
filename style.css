@@ -19,7 +19,7 @@ body {
   justify-content: left;
   margin: 0;
   height: 80px;
-  width: 100%;
+  width: auto;
   border: 1px solid gray;
   font-size: 12px;
 }
@@ -49,17 +49,17 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
-  margin: auto;
+  height: 500px;
+  width: auto;
+  margin: 110px 0 80px;
   /* background-image: url("picture/carwash3.jpg");
   background-repeat: no-repeat;
   background-size: cover; */
 }
 .content1-img {
-  height: 100%;
+  height: auto;
   width: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
   /* z-index: -1; */
 }
 .content2 {
@@ -68,8 +68,8 @@ a:hover {
   justify-content: flex-start;
   align-items: center;
   height: 700px;
-  width: 100%;
-  margin: 50px auto;
+  width: auto;
+  margin: 50px 0;
 }
 .content2-left {
   display: flex;
@@ -112,9 +112,9 @@ a:hover {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin: 20px auto;
+  margin: 20px 0;
   height: 700px;
-  width: 100%;
+  width: auto;
 }
 .content3-services {
   display: flex;
@@ -167,9 +167,9 @@ a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   height: 350px;
-  width: 100%;
+  width: auto;
   background-color: #202c45;
 }
 /* .container4 {
@@ -183,7 +183,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   height: 150px;
-  width: 220px;
+  width: 200px;
   margin: 30px;
   /* margin-left: 60px; */
   /* background-color: rosybrown; */
@@ -222,7 +222,7 @@ a:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 10px auto;
+  margin: 10px 0;
 }
 .price-item {
   display: flex;
@@ -294,7 +294,7 @@ strong {
   align-items: center;
   margin: 10px auto;
   top: 80px;
-  z-index: 2;
+  /* z-index: 2; */
   /* left: auto; */
 }
 
@@ -316,7 +316,7 @@ strong {
   position: sticky;
   position: -webkit-sticky;
   height: 70px;
-  width: 100%;
+  width: auto;
   top: 0;
   /* left: 0; */
   background-color: #202c45;
@@ -381,10 +381,10 @@ strong {
 .content6 {
   margin: 10px 0;
   display: flex;
-  /* flex-direction: row;
-  justify-content: center; */
+  flex-direction: row;
+  justify-content: flex-start;
   height: 600px;
-  width: 100%;
+  width: auto;
   /* background-color: black; */
 }
 .ws-point-left {
@@ -392,8 +392,8 @@ strong {
   flex-direction: column;
   align-items: flex-start;
   /* background-color: yellow; */
-  width: 800px;
-  height: auto;
+  width: 700px;
+  height: 400px;
   margin: 30px 0px;
   margin-left: 50px;
 }
@@ -403,17 +403,18 @@ strong {
   flex-wrap: wrap;
   /* background-color: aqua; */
 
-  /* margin: 0px; */
+  /* margin: 0p */
   /* justify-content: center; */
   /* align-items: center; */
-  width: 100%;
+  /* width: 100%; */
 }
 .ws-left-row-sub {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  height: 150px;
-  width: 230px;
+  align-items: flex-start;
+  height: 100px;
+  width: 250px;
   margin: 20px 40px;
   /* background-color: blueviolet; */
 }
@@ -421,8 +422,9 @@ strong {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin: 5px;
   /* background-color: chocolate; */
-  width: 200px;
+  /* width: 200px; */
 }
 .ws-left-img {
   padding: 10px 0;
@@ -433,6 +435,7 @@ strong {
 .ws-para {
   margin: 0;
   padding: 5px 0;
+  color: #202c45;
 }
 .ws-h1 {
   font-size: 50px;
@@ -440,9 +443,9 @@ strong {
   color: #202c45;
 }
 .ws-right {
-  align-items: flex-end;
+  /* align-items: flex-start; */
   height: 500px;
-  width: 500px;
+  width: auto;
   padding-right: 15px;
   padding-left: 15px;
   margin: 15px 0;
@@ -453,7 +456,7 @@ strong {
   align-items: flex-start;
   justify-content: left;
   padding: 45px 30px;
-  width: 300px;
+  /* width: auto; */
   background: #e81c2e;
   border-radius: 5px;
   height: auto;
@@ -500,24 +503,25 @@ strong {
   width: 300px;
 }
 .content7 {
-  max-width: 960px;
+  width: auto;
   margin: 0 15px;
   padding: 0 15px;
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  /* height: 800px; */
-  width: 100%;
+  justify-content: flex-start;
+  height: 700px;
+  /* background-color: black; */
 }
 .e-w {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 0;
   /* max-width: 96%; */
   /* height: 500px; */
+  /* background-color: blue; */
 }
 .e-w-row {
   display: flex;
@@ -525,24 +529,36 @@ strong {
   align-items: center;
   justify-content: center;
   height: 400px;
-  width: 100%;
-  background-color: tomato;
+  /* width: 100%; */
+  /* background-color: tomato; */
   padding: 30px 0;
+  margin: 15px;
 }
 .team-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin: 0;
-  background-color: violet;
-  width: 200px;
-  margin: 0 15px;
+  /* margin: 0; */
+  /* background-color: violet; */
+  /* width: 200px; */
+  margin: 0 10px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.team-img:hover {
+  transform: scale(1.1);
 }
 .team-img {
-  height: 200px;
-  width: 200px;
+  height: auto;
+  width: 230px;
 }
+.team-text:hover,
+.text-item:active {
+  background-color: #e81c2e;
+}
+
 .team-text {
   display: flex;
   flex-direction: column;
@@ -551,11 +567,59 @@ strong {
   background-color: #202c45;
   color: white;
   width: 200px;
-  height: 150px;
-  /* margin: ; */
+  height: 100px;
+  padding: 15px;
 }
-.team-para {
+
+.team-h2 {
   margin: 15px;
   margin-bottom: 0;
-  padding: 10px;
+  padding: 5px;
+  font-weight: 400;
+}
+.team-para {
+  margin: 0;
+  padding: 5px 0;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.team-middle {
+  position: absolute;
+  bottom: 110px;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.team-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202c45;
+  border-radius: 40px;
+  height: 40px;
+  width: 40px;
+  margin: 0 5px;
+}
+.team-icon-img {
+  height: 15px;
+  width: 15px;
+  color: white;
+}
+.client-profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-start;
+  height: 300px;
+  width: 300px;
+}
+.client-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  width: auto;
 }
